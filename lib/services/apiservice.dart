@@ -7,7 +7,8 @@ import 'package:weather/models/weather.dart';
 
 class APIService {
 
-		final String constParams = 'units=metric&appid=10d2691a6c490ca9a481ee5c0a6c7936';
+		static const String API_KEY = '';  // your API key here
+		final String constParams = 'units=metric&appid=' + API_KEY;
 		final String baseURL = 'https://api.openweathermap.org/data/2.5/';
 
 		Future getCurrentData(LocationData locationData) async {
